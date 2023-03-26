@@ -1,33 +1,32 @@
+$primary: #822af0;
+$font-size-root: 0.875rem;
+$container-padding-x: 3rem;
+$breadcrumb-margin-bottom: 0;
+
 @import "bootstrap";
 
-:root {
-  font-size: 0.875rem;
-  --bs-dark: #822af0;
-}
-
 body {
-  background-color: var(--bs-dark);
-}
+  background-color: $primary;
 
-aside .nav-link,
-.link-light {
-  color: var(--bs-gray-400) !important;
-}
+  aside {
+    min-width: 14rem;
 
-aside .nav-link:hover {
-  color: var(--bs-white) !important;
-  background-color: var(--bs-gray-800);
-}
+    .nav-link {
+      color: $white !important;
+      font-weight: $font-weight-semibold;
 
-aside .nav-link.active {
-  color: var(--bs-white) !important;
-  background-color: var(--bs-gray-600) !important;
-}
+      &:hover,
+      &.active {
+        color: $primary !important;
+      }
 
-.breadcrumb {
-  --bs-breadcrumb-margin-bottom: 0;
-}
+      &:hover {
+        background-color: $gray-300;
+      }
 
-.container-fluid {
-  --bs-gutter-x: 3rem;
+      &.active {
+        background-color: $white !important;
+      }
+    }
+  }
 }
