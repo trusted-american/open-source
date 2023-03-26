@@ -2,7 +2,7 @@
 
 :root {
   font-size: 0.875rem;
-  --bs-dark: #131313;
+  --bs-dark: #822af0;
 }
 
 body {
@@ -26,4 +26,8 @@ aside .nav-link.active {
 
 .breadcrumb {
   --bs-breadcrumb-margin-bottom: 0;
+}
+
+.container-fluid {
+  --bs-gutter-x: 3rem;
 }
