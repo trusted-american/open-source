@@ -1,5 +1,27 @@
 {{page-title "TAIA Open Source"}}
+{{breadcrumb "TAIA Open Source" route="index"}}
 
-<h2 id="title">Welcome to Ember</h2>
+<Aside
+  @title="Open Source"
+  @logo="https://a3.taia.us/assets/images/logo.svg"
+  @route="index"
+>
+  <Aside::Item @text="Home" @route="index" @icon="house" />
+  <Aside::Item @text="Projects" @icon="boxes-stacked" @route="projects" />
+</Aside>
 
-{{outlet}}
+<Main>
+  <Main::TopHeader>
+    <BreadcrumbTrail />
+  </Main::TopHeader>
+
+  <Main::Body>
+    {{outlet}}
+  </Main::Body>
+
+  <Main::Footer>
+    <ExternalLink @url="https://github.com/trusted-american/open-source">
+      GitHub
+    </ExternalLink>
+  </Main::Footer>
+</Main>

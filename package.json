@@ -28,6 +28,7 @@
     "@ember/test-helpers": "^2.9.3",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
+    "@trusted-american/design-system": "^0.0.56",
     "babel-eslint": "^10.1.0",
     "bootstrap": "^5.2.3",
     "broccoli-asset-rev": "^3.0.0",
